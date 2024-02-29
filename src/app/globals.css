@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h1 {
+    @apply text-[38px] font-bold leading-[48px];
+  }
+
+  .button {
+    @apply rounded text-sm text-center font-semibold text-white px-6 py-2;
+    @apply bg-blue-600 hover:bg-blue-700 active:bg-blue-800 disabled:bg-blue-200;
+    @apply transition-colors;
+  }
+}
